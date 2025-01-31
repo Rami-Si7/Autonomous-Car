@@ -15,19 +15,19 @@ For more information about the funcuality of each subsystem, you can check the r
 ## Brief Footage Of Our System
 Watch the Youtube video for more by clicking [here](https://youtu.be/6kBQ6Ja8XR0)
 ### Lane Change Test
-![Lane Change Test](GIFS/LC gif.gif)
+![Lane Change Test](GIFS/LC-gif.gif)
 
 ### Lane Change Test
-![Lane Change Test](GIFS/LC gif.gif)
+![Lane Change Test](GIFS/LC-gif.gif)
 
 ### Lane Change Test
-![Lane Change Test](GIFS/LC gif.gif)
+![Lane Change Test](GIFS/LC-gif.gif)
 
 ## Run Project
 There is 2 parts of running the project:
 - Run the server:
        - Must initilazie an enviornment (follow the steps):
-        - For windows: 
+       - For windows: 
               - 1. python -m venv my_env  # Replace 'my_env' with any name you want
               - 2. my_env\Scripts\activate
               - 3. py -3.10 -m venv my_env
@@ -35,7 +35,7 @@ There is 2 parts of running the project:
               - 5. pip install -r requirements.txt
               - 6. to verfiy enter this command: python -c "import flask; import tensorflow; import ultralytics; print('All libraries installed successfully!')"
               - 7. run test.py
-        - For mac: 
+       - For mac: 
               - 1. python3 -m venv my_env  # Replace 'my_env' with any name you want
               - 2. source my_env/bin/activate
               - 3. sudo apt update && sudo apt install python3.10 python3.10-venv -y  # For Debian/Ubuntu , brew install python@3.10  # For macOS (Homebrew users)
