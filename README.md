@@ -15,9 +15,9 @@ For more information about the funcuality of each subsystem, you can check the r
 
 ## Run Project
 There is 2 parts of running the project:
-- Run the server.
+- Run the server:
        - To run the server, dependices file must be installed, requirments.txt
-- Run the simulation.
+- Run the simulation:
        - To, lanuch the simulation, you will need to download Godot Mono using this [link for mac](https://godotengine.org/download/macos/), [link for windows](https://godotengine.org/download/windows/)
        - Then you will need to download this github repository on your computer, and then open godot using the downloaded repository
 
