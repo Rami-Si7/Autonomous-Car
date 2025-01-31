@@ -1,7 +1,7 @@
 # Autonomous Car Project
 In this project, we developed a simulation for autonomous driving using the Godot game engine. The system integrates state-of-the-art machine learning and computer vision techniques, including the Nvidia Dave-2 model for steering prediction  and YOLO(You Only Look Once) for object detection. The simulation consists of seven tracks designed to test various autonomous driving capabilities, such as lane merging, speed sign detection, obstacle avoidance, lane change and autonomous parking. The results of our test tracks showed great performance although the server side ran on CPU, with hardware which has a GPU compatible with Cuda, the performance will be better.
 
-Here is and over view of the system
+Here is and overview of the system
 ![System Digram](system_images/systemDiagram.png)
 
 As you can see we used multiple machine learinig, image proccessing and computer vision models to implement such system.
@@ -14,14 +14,14 @@ For more information about the funcuality of each subsystem, you can check the r
 
 ## Brief Footage Of Our System
 Watch the Youtube video for more by clicking [here](https://youtu.be/6kBQ6Ja8XR0)
-### Lane Change Test
+### Lane Change Subsystem Test
 ![Lane Change Test](GIFS/LC.gif)
 
-### Lane Change Test
-![Lane Change Test](GIFS/LC.gif)
+### Parking Subsystem Test
+![Parking Subsystem Test](GIFS/Parking.gif)
 
-### Lane Change Test
-![Lane Change Test](GIFS/LC.gif)
+### Speed Sign detection Subsystem Test
+![Speed Sign detection Subsystem Test](GIFS/YoloSpeedsign.gif)
 
 ## Run Project
 There is 2 parts of running the project:
