@@ -15,13 +15,13 @@ For more information about the funcuality of each subsystem, you can check the r
 ## Brief Footage Of Our System
 Watch the Youtube video for more by clicking [here](https://youtu.be/6kBQ6Ja8XR0)
 ### Lane Change Test
-![Lane Change Test](GIFS/LC-gif.gif)
+![Lane Change Test](GIFS/LC.gif)
 
 ### Lane Change Test
-![Lane Change Test](GIFS/LC-gif.gif)
+![Lane Change Test](GIFS/LC.gif)
 
 ### Lane Change Test
-![Lane Change Test](GIFS/LC-gif.gif)
+![Lane Change Test](GIFS/LC.gif)
 
 ## Run Project
 There is 2 parts of running the project:
