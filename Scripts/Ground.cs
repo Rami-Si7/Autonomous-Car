@@ -58,10 +58,13 @@ public partial class Ground : Node3D
 
 	private const string ServerUrl = "http://127.0.0.1:4567"; // Flask server URL
 
+	 // Dataset path for Dave-2 model
+	private string savePath = "/Use you own path/Dave2/IMG";
+	private string logFilePath = "/Use you own path/Dave2/annotations.csv";
 
-	private string savePath = "/Users/ramisimaan/Desktop/track4/IMG";
-	private string parkingDatsasetPath = "/Users/ramisimaan/Desktop/test3";
-	private string logFilePath = "/Users/ramisimaan/Desktop/track4/annotations.csv";
+	// Dataset path for parking spaces YOLO model
+	private string parkingDatsasetPath = "/Use you own path/parkingDataset";
+
 
 	private bool flag = true;
 
@@ -645,27 +648,27 @@ public partial class Ground : Node3D
 
 		if(Global.GameMode == "Training")
 		{
-			// if(Input.IsActionPressed("record"))
-			// {
-			// 	record = !record;
-			// }
-			// if(timeElapsed > 0.1f)
-			// {
-			// 	timeElapsed = 0;
-			// 	if(record)
-			// 	{
-			// 		SvpRightCamera.GlobalTransform = rightCamera.GlobalTransform;
-			// 		SvpLeftCamera.GlobalTransform = leftCamera.GlobalTransform;
-			// 		CaptureAndLogData();
-			// 	}
-			// }
 			if(Input.IsActionPressed("record"))
 			{
-				SvpLeftMidCamera.GlobalTransform = leftMidCamera.GlobalTransform;
-				// CaptureParkingSpaceData();
-				// CapturetTrafficSignData();
-				CaptureAndLogData();
+				record = !record;
 			}
+			if(timeElapsed > 0.1f)
+			{
+				timeElapsed = 0;
+				if(record)
+				{
+					SvpRightCamera.GlobalTransform = rightCamera.GlobalTransform;
+					SvpLeftCamera.GlobalTransform = leftCamera.GlobalTransform;
+					CaptureAndLogData();
+				}
+			}
+			// if(Input.IsActionPressed("record"))
+			// {
+			// 	SvpLeftMidCamera.GlobalTransform = leftMidCamera.GlobalTransform;
+			// 	// CaptureParkingSpaceData();
+			// 	// CapturetTrafficSignData();
+			// 	CaptureAndLogData();
+			// }
 		}
 		else
 		{
