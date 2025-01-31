@@ -1,0 +1,32 @@
+[gd_scene load_steps=6 format=3 uid="uid://dcixsxgh6s57y"]
+
+[ext_resource type="Texture2D" uid="uid://cig1bqlx1i22p" path="res://stop_sign.jpg" id="1_xls1q"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_d8kiq"]
+albedo_texture = ExtResource("1_xls1q")
+uv1_scale = Vector3(3, 2, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_1j1fb"]
+lightmap_size_hint = Vector2i(10, 21)
+material = SubResource("StandardMaterial3D_d8kiq")
+uv2_padding = 3.0
+size = Vector3(1, 1, 0)
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_2ci6j"]
+radius = 0.05
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_itna0"]
+size = Vector3(1, 2.49207, 1)
+
+[node name="StaticBody3D" type="StaticBody3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.46439, 0)
+mesh = SubResource("BoxMesh_1j1fb")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
+mesh = SubResource("CapsuleMesh_2ci6j")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.746033, 0)
+shape = SubResource("BoxShape3D_itna0")

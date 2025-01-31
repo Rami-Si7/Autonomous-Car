@@ -1,0 +1,38 @@
+[gd_scene load_steps=2 format=3 uid="uid://dkvgv5qwqltw0"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_be55s"]
+size = Vector3(0.4, 0.001, 0.05)
+
+[node name="crossWalk" type="Node3D"]
+
+[node name="MeshInstance3D6" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.749588, 0.0506195, 0.319498)
+mesh = SubResource("BoxMesh_be55s")
+
+[node name="MeshInstance3D7" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.75, 0.051, 0.219)
+mesh = SubResource("BoxMesh_be55s")
+
+[node name="MeshInstance3D8" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.749588, 0.0506195, 0.319498)
+mesh = SubResource("BoxMesh_be55s")
+
+[node name="MeshInstance3D9" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.75, 0.051, 0.119)
+mesh = SubResource("BoxMesh_be55s")
+
+[node name="MeshInstance3D10" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.75, 0.051, 0.019)
+mesh = SubResource("BoxMesh_be55s")
+
+[node name="MeshInstance3D11" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.75, 0.051, -0.081)
+mesh = SubResource("BoxMesh_be55s")
+
+[node name="MeshInstance3D12" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.75, 0.051, -0.181)
+mesh = SubResource("BoxMesh_be55s")
+
+[node name="MeshInstance3D13" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.75, 0.051, -0.281)
+mesh = SubResource("BoxMesh_be55s")

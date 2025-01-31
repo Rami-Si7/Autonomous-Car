@@ -1,0 +1,37 @@
+[gd_scene load_steps=7 format=3 uid="uid://buytvsak4j1e"]
+
+[ext_resource type="Texture2D" uid="uid://bmf0w4kqx56tt" path="res://signs/start_lane_change.png" id="1_lp6s2"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_a5m2b"]
+albedo_texture = ExtResource("1_lp6s2")
+uv1_scale = Vector3(3, 2, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_fp6uh"]
+material = SubResource("StandardMaterial3D_a5m2b")
+size = Vector3(1, 1, 0.01)
+
+[sub_resource type="BoxMesh" id="BoxMesh_3hhqi"]
+size = Vector3(1, 1, 0.01)
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_ojops"]
+radius = 0.05
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ewxy4"]
+size = Vector3(1, 2.7605, 0.15155)
+
+[node name="StaticBody3D" type="StaticBody3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.32047, 0.0490155)
+mesh = SubResource("BoxMesh_fp6uh")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.32047, 0.0386264)
+mesh = SubResource("BoxMesh_3hhqi")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="."]
+mesh = SubResource("CapsuleMesh_ojops")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.451294, 0.0211487)
+shape = SubResource("BoxShape3D_ewxy4")

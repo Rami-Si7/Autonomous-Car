@@ -1,0 +1,31 @@
+[gd_scene load_steps=3 format=3 uid="uid://c6qcdsmw5ry41"]
+
+[ext_resource type="Texture2D" uid="uid://bysd611osil4l" path="res://speedMeter_1.png" id="1_vtpx3"]
+
+[sub_resource type="SystemFont" id="SystemFont_girh8"]
+font_weight = 450
+subpixel_positioning = 0
+
+[node name="SpeedMeter" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = 14.0
+offset_top = 4.0
+offset_right = 422.0
+offset_bottom = 397.0
+texture = ExtResource("1_vtpx3")
+expand_mode = 1
+
+[node name="SpeedLabel" type="Label" parent="."]
+offset_left = 20.0
+offset_top = 11.0
+offset_right = 419.0
+offset_bottom = 390.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = SubResource("SystemFont_girh8")
+theme_override_font_sizes/font_size = 100
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1

@@ -1,0 +1,38 @@
+[gd_scene load_steps=7 format=3 uid="uid://igox1b23n6mx"]
+
+[ext_resource type="Texture2D" uid="uid://byr2hwpnh5bmb" path="res://signs/parking.png" id="1_s4op1"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mfqse"]
+albedo_texture = ExtResource("1_s4op1")
+uv1_scale = Vector3(3, 2, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_k6nr7"]
+material = SubResource("StandardMaterial3D_mfqse")
+size = Vector3(1, 1, 0.01)
+
+[sub_resource type="BoxMesh" id="BoxMesh_3mp5c"]
+size = Vector3(1, 1, 0.01)
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_472xr"]
+radius = 0.05
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_8t80y"]
+size = Vector3(1, 2.27454, 0.106873)
+
+[node name="StaticBody3D" type="StaticBody3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.607537, 0.00967038)
+mesh = SubResource("BoxMesh_k6nr7")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.607537, 0)
+mesh = SubResource("BoxMesh_3mp5c")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.769362, -0.0621074)
+mesh = SubResource("CapsuleMesh_472xr")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.0194702, 0.00894165)
+shape = SubResource("BoxShape3D_8t80y")

@@ -1,0 +1,24 @@
+[gd_scene load_steps=5 format=3 uid="uid://d0prx8f6oeseo"]
+
+[ext_resource type="Texture2D" uid="uid://bwu32hc55d3o3" path="res://textures/go-right.png" id="1_lnr1r"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fie1o"]
+albedo_texture = ExtResource("1_lnr1r")
+uv1_scale = Vector3(3, 2, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_jhlwd"]
+material = SubResource("StandardMaterial3D_fie1o")
+size = Vector3(1, 1, 0.01)
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_u8r75"]
+radius = 0.05
+
+[node name="Node3D" type="Node3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0655973, 1.37608, 0.120075)
+mesh = SubResource("BoxMesh_jhlwd")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.0738374)
+mesh = SubResource("CapsuleMesh_u8r75")

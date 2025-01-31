@@ -1,0 +1,38 @@
+[gd_scene load_steps=7 format=3 uid="uid://b66kkidnpyq6m"]
+
+[ext_resource type="Texture2D" uid="uid://cgk3kvcbh3e7j" path="res://signs/90-speed-sign.png" id="1_c2yj7"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_bpwkf"]
+size = Vector3(0.994629, 1.9364, 0.15918)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fms1s"]
+albedo_texture = ExtResource("1_c2yj7")
+uv1_scale = Vector3(3, 2, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_s2x0a"]
+material = SubResource("StandardMaterial3D_fms1s")
+size = Vector3(1, 1, 0.001)
+
+[sub_resource type="BoxMesh" id="BoxMesh_8dx77"]
+size = Vector3(1, 1, 0.001)
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_kp4l3"]
+radius = 0.05
+
+[node name="StaticBody3D" type="StaticBody3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1.00857, 0, 0, 0, 1.00857, 0, 0, 0, 1.00857, -0.0061154, 0.467992, 0.0253137)
+shape = SubResource("BoxShape3D_bpwkf")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.900033, 0)
+mesh = SubResource("BoxMesh_s2x0a")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.908808, -0.0147246)
+mesh = SubResource("BoxMesh_8dx77")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.890099, 0, 0, 0, 1, 0, 0, 0, 0.755125, 0, 0, -0.1)
+mesh = SubResource("CapsuleMesh_kp4l3")

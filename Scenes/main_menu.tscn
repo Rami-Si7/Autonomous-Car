@@ -1,0 +1,58 @@
+[gd_scene load_steps=3 format=3 uid="uid://517tm6fv1yen"]
+
+[ext_resource type="Texture2D" uid="uid://ddyo1fkuihpjt" path="res://Menu_photo.png" id="1_eugkf"]
+[ext_resource type="Script" path="res://Scripts/MainMenu.cs" id="1_yri5j"]
+
+[node name="MainMenu" type="Node2D"]
+script = ExtResource("1_yri5j")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = 2
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer"]
+offset_left = 6.0
+offset_top = 26.0
+offset_right = 2370.72
+offset_bottom = 1340.0
+texture = ExtResource("1_eugkf")
+expand_mode = 3
+
+[node name="Label" type="Label" parent="CanvasLayer"]
+offset_left = 845.0
+offset_top = 830.0
+offset_right = 1887.0
+offset_bottom = 967.0
+theme_override_font_sizes/font_size = 60
+text = "Please Select  A Mode
+"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer"]
+offset_left = 410.0
+offset_top = 966.0
+offset_right = 1886.0
+offset_bottom = 1203.0
+
+[node name="Autonomous" type="Button" parent="CanvasLayer/HBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 70
+text = "Autonmous
+"
+
+[node name="Training" type="Button" parent="CanvasLayer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 10
+theme_override_font_sizes/font_size = 70
+text = "Training
+"
+
+[node name="Welcome Note" type="Label" parent="CanvasLayer"]
+offset_left = 532.0
+offset_top = 174.0
+offset_right = 1811.0
+offset_bottom = 311.0
+theme_override_font_sizes/font_size = 100
+text = "Welcome to Our Simulator
+"
+
+[connection signal="pressed" from="CanvasLayer/HBoxContainer/Autonomous" to="." method="_on_autonomous_pressed"]
+[connection signal="pressed" from="CanvasLayer/HBoxContainer/Training" to="." method="_on_training_pressed"]

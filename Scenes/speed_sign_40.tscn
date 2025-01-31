@@ -1,0 +1,37 @@
+[gd_scene load_steps=7 format=3 uid="uid://biyegiq4os3vm"]
+
+[ext_resource type="Texture2D" uid="uid://xs4g1olghxwh" path="res://signs/30.png" id="1_rwka8"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gsj4r"]
+albedo_texture = ExtResource("1_rwka8")
+uv1_scale = Vector3(3, 2, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_s3k46"]
+material = SubResource("StandardMaterial3D_gsj4r")
+size = Vector3(1, 1, 0.01)
+
+[sub_resource type="BoxMesh" id="BoxMesh_v1b2y"]
+size = Vector3(1, 1, 0.01)
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_h2gku"]
+radius = 0.05
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_st44q"]
+size = Vector3(1, 2.08252, 0.508301)
+
+[node name="StaticBody3D" type="StaticBody3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.24674, 0.0760754)
+mesh = SubResource("BoxMesh_s3k46")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.24674, 0.0244093)
+mesh = SubResource("BoxMesh_v1b2y")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="."]
+mesh = SubResource("CapsuleMesh_h2gku")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.54126, 0.0749533)
+shape = SubResource("BoxShape3D_st44q")
