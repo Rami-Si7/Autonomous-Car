@@ -50,9 +50,8 @@ There is 2 parts of running the project:
               - 7. run test.py
 
 - Run the simulation:
-       - To, lanuch the simulation, you will need to download Godot Mono using this [link for mac](https://godotengine.org/download/macos/), [link for windows](https://godotengine.org/download/windows/)
-
-       - Then you will need to download this github repository on your computer, and then open godot using the downloaded repository
+-To, lanuch the simulation, you will need to download Godot Mono using this [link for mac](https://godotengine.org/download/macos/), [link for windows](https://godotengine.org/download/windows/)
+- Then you will need to download this github repository on your computer, and then open godot using the downloaded repository
 
 
 
