@@ -19,6 +19,7 @@ Watch the Youtube video for more by clicking [here](https://youtu.be/6kBQ6Ja8XR0
 
 ### Parking Subsystem Test
 ![Parking Subsystem Test](GIFS/Parking.gif)
+
 Check out runs folder for result of free-slot detections.
 
 ### Speed Sign detection Subsystem Test
@@ -58,15 +59,10 @@ There is 2 parts of running the project:
 - There are mulitple folders in this project:
 
        - Scripts: has all the code needed to implement the Godot simulation, computer vision and machine learning models, there are two notbooks, Dave-2 which we trained the steering prediction model, And YOLO model for free-slot and traffic signs detection model.
-
        - Scenes: has all the scence that we tested in our simulation.
-
        - Addons: containes all the asset libraries that we used in Godot Game engine.
-
        - Models: contain the model we trained and using.
-
        - Vechile: contains the body, wheels and texture.
-       
        other folders contains texture and images.
 
 
