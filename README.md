@@ -36,7 +36,7 @@ There is 2 parts of running the project:
               - 1. python -m venv my_env  # Replace 'my_env' with any name you want
               - 2. my_env\Scripts\activate
               - 3. py -3.10 -m venv my_env
-              - 4. python --version  # Should show Python 3.10.x
+              - 4. python --version  # Should show Python 3.10.x, if not install it
               - 5. pip install -r requirements.txt
               - 6. to verfiy enter this command: python -c "import flask; import tensorflow; import ultralytics; print('All libraries installed successfully!')"
               - 7. run test.py
