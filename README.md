@@ -56,12 +56,12 @@ There is 2 parts of running the project:
 - Then you will need to download this github repository on your computer, and then open godot using the downloaded repository
 
 ## OverView about project files
-- There are mulitple folders in this project:
-       - Scripts: has all the code needed to implement the Godot simulation, computer vision and machine learning models, there are two notbooks, Dave-2 which we trained the steering prediction model, And YOLO model for free-slot and traffic signs detection model.
-       - Scenes: has all the scence that we tested in our simulation.
-       - Addons: containes all the asset libraries that we used in Godot Game engine.
-       - Models: contain the model we trained and using.
-       - Vechile: contains the body, wheels and texture.
+There are mulitple folders in this project:
+- Scripts: has all the code needed to implement the Godot simulation, computer vision and machine learning models, there are two notbooks, Dave-2 which we trained the steering prediction model, And YOLO model for free-slot and traffic signs detection model.
+ - Scenes: has all the scence that we tested in our simulation.
+- Addons: containes all the asset libraries that we used in Godot Game engine.
+- Models: contain the model we trained and using.
+- Vechile: contains the body, wheels and texture.
        other folders contains texture and images.
 
 
