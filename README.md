@@ -57,7 +57,6 @@ There is 2 parts of running the project:
 
 ## OverView about project files
 - There are mulitple folders in this project:
-
        - Scripts: has all the code needed to implement the Godot simulation, computer vision and machine learning models, there are two notbooks, Dave-2 which we trained the steering prediction model, And YOLO model for free-slot and traffic signs detection model.
        - Scenes: has all the scence that we tested in our simulation.
        - Addons: containes all the asset libraries that we used in Godot Game engine.
