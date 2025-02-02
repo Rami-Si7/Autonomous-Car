@@ -10,7 +10,7 @@ We used Nvidia Dave-2 model for steering command prediction, we basicly trained 
 To connect between the worlds of AI models which all in pyhton and simulation which in C# we used Server-Client approach.
 We ran a Server using Socketio and eventlet. The client(simulation) send requests to the server like steering command prediction and YOLO object detection. Server proccess this requests by running the relevant model for each request. When a result is aquired, the server will send back to the client, then changes we be applied.
 
-For more information about the funcuality of each subsystem, you can check the report.pdf.
+For more information about the funcuality of each subsystem, you can check our [paper](Autonomous_Driving.pdf).
 
 ## Brief Footage Of Our System
 Watch the Youtube video for more by clicking [here](https://youtu.be/6kBQ6Ja8XR0)
