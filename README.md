@@ -25,6 +25,8 @@ Check out runs folder for result of free-slot detections.
 ### Speed Sign detection Subsystem Test
 ![Speed Sign detection Subsystem Test](GIFS/YoloSpeedsign.gif)
 
+## Paper
+This project is based on this [paper](Autonomous_Driving.pdf)
 ## Run Project
 There is 2 parts of running the project:
 - Run the server:
@@ -54,6 +56,11 @@ There is 2 parts of running the project:
 - Run the simulation:
 -To, lanuch the simulation, you will need to download Godot Mono using this [link for mac](https://godotengine.org/download/macos/), [link for windows](https://godotengine.org/download/windows/)
 - Then you will need to download this github repository on your computer, and then open godot using the downloaded repository
+- Open ground.cs file, adjust this paths of the variable: savePath and logFilePath  to your path.
+- If you have any problem with using the asset libraries in Godot, please redownload them:
+       1. Terrain3d
+       2. Road generator
+       3. Proton Scatter
 
 ## OverView about project files
 There are mulitple folders in this project:
